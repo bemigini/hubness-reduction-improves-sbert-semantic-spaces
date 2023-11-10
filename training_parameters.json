@@ -2,27 +2,27 @@
     "centering_parameters": [
 		{
             "normalize_embeddings": false,
-            "center_features": false,
+            "center_embeddings": false,
             "z_score_norm": false
         },
         {
             "normalize_embeddings": false,
-            "center_features": false,
+            "center_embeddings": false,
             "z_score_norm": true
         },
 		{
             "normalize_embeddings": true,
-            "center_features": false,
+            "center_embeddings": false,
             "z_score_norm": false
         },
 		{
             "normalize_embeddings": false,
-            "center_features": true,
+            "center_embeddings": true,
             "z_score_norm": false
         },
 		{
             "normalize_embeddings": true,
-            "center_features": true,
+            "center_embeddings": true,
             "z_score_norm": false
         }
     ],

@@ -2,7 +2,7 @@
     "centering_parameters": [
 		{
             "normalize_embeddings": false,
-            "center_features": false,
+            "center_embeddings": false,
             "z_score_norm": false
         }
     ],
