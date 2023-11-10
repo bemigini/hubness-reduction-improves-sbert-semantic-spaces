@@ -34,10 +34,37 @@ Due to the size, the Yahoo Answers dataset is not included in this repo. It can 
 
 ## Usage
 
-To train sentence-BERT models with settings from training_parameters_small_example.json on the stsbenchmark dataset run the command
+To see all options, use:
 ```
-python run.py ...
+python run.py -h
 ```
+To train models use:
+```
+python run.py train --output-folder=<file> --training-parameters=<file> [options]
+```
+
+For example, to train sentence-BERT models with settings from training_parameters_small_example.json on the stsbenchmark dataset using the gpu and saving the output in the "output" folder, run the command
+```
+python run.py train --output-folder=output --training-parameters=training_parameters_small_example.json --cuda
+```
+To get embeddings from a single trained model, use:
+```
+python run.py embeddings --output-folder=<file> --model-name=<string> --dataset=<string> --embeddings-save-to=<file>
+```
+For example, to get embeddings for the 20 Newsgroup dataset with your model "sts_bert_microsoft-mpnet-base_cos_ORTHOGONAL_z_False_n_False_c_False_seed0" from the folder "output/models" and save the embeddings in "output/emb_test.h5" use
+```
+python run.py embeddings --output-folder=output --model-name=sts_bert_microsoft-mpnet-base_cos_ORTHOGONAL_z_False_n_False_c_False_seed0 --dataset=newsgroups.all --embeddings-save-to=emb_test.h5 --cuda
+```
+To get embeddings from all models in a folder, use:
+```
+python run.py embeddings --output-folder=<file> --model-name=<string> --dataset=<string> --model-names-path=<file>
+```
+For example, to get embeddings for the 20 Newsgroup dataset with all models from the folder "output/models" and save the embeddings in "output/embeddings" use
+```
+python run.py embeddings --output-folder=output --model-name=sts_bert_microsoft-mpnet-base_cos_ORTHOGONAL_z_False_n_False_c_False_seed0 --dataset=newsgroups.all --model-names-path=models --cuda
+```
+
+
 TODO: Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
 ## Authors and acknowledgment
