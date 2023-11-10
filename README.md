@@ -43,7 +43,7 @@ To train models use:
 ```
 python run.py train --output-folder=<file> --training-parameters=<file> [options]
 ```
-
+training_parameters.json contains all the training parameters used in the article.
 For example, to train sentence-BERT models with settings from training_parameters_small_example.json on the stsbenchmark dataset using the gpu and saving the output in the "output" folder, run the command
 ```
 python run.py train --output-folder=output --training-parameters=training_parameters_small_example.json --cuda
@@ -68,10 +68,15 @@ To get the performance of the embeddings use:
 ```
 python run.py performance --output-folder=<file> --dataset=<string> --model-names-path=<file> [options]
 ```
-For example, to get the knn performance of the embeddings from the "output/embeddings" folder on the test split of 20 Newsgroups use:
+For example, to get the knn performance of the embeddings from the "output/embeddings" folder on the test split of 20 Newsgroups with both no hubness reduction and f-norm use:
 ```
-python run.py performance --output-folder=output --dataset=newsgroups.test --model-names-path=embeddings --result-type=knn
+python run.py performance --output-folder=output --dataset=newsgroups.test --model-names-path=embeddings --force-dist=none,normal_all --result-type=knn
 ```
+To get the hubness performance of the embeddings from the "output/embeddings" folder on the test split of 20 Newsgroups with both no hubness reduction and f-norm use:
+```
+python run.py performance --output-folder=output --dataset=newsgroups.test --model-names-path=embeddings --force-dist=none,normal_all --result-type=hubness
+```
+
 
 
 TODO: Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
