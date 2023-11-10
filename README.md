@@ -14,7 +14,7 @@ The outline of the installation is the following:
 
 **1. Create and activate conda environment**
 
-If you are installing on a linux machine with GPU, use the command:
+If you are installing on a linux machine with GPU, use the linux_gpu.yml file provided and the commands:
 ```
 conda create -f linux_gpu.yml
 conda activate s_bert_hub
