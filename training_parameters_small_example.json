@@ -1,0 +1,19 @@
+{
+    "centering_parameters": [
+		{
+            "normalize_embeddings": false,
+            "center_features": false,
+            "z_score_norm": false
+        }
+    ],
+    "base_models": [
+        "microsoft/mpnet-base",
+		"distilroberta-base"
+    ],
+    "distances": [
+        "cos"
+    ],
+    "max_difference": [
+        "ORTHOGONAL"
+    ]
+}

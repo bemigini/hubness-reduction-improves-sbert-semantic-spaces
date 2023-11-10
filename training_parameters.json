@@ -1,0 +1,42 @@
+{
+    "centering_parameters": [
+		{
+            "normalize_embeddings": false,
+            "center_features": false,
+            "z_score_norm": false
+        },
+        {
+            "normalize_embeddings": false,
+            "center_features": false,
+            "z_score_norm": true
+        },
+		{
+            "normalize_embeddings": true,
+            "center_features": false,
+            "z_score_norm": false
+        },
+		{
+            "normalize_embeddings": false,
+            "center_features": true,
+            "z_score_norm": false
+        },
+		{
+            "normalize_embeddings": true,
+            "center_features": true,
+            "z_score_norm": false
+        }
+    ],
+    "base_models": [
+        "microsoft/mpnet-base",
+		"distilroberta-base",
+		"microsoft/MiniLM-L12-H384-uncased"
+    ],
+    "distances": [
+        "cos",
+        "cos_dist",
+		"euclidean"
+    ],
+    "max_difference": [
+        "ORTHOGONAL"
+    ]
+}
