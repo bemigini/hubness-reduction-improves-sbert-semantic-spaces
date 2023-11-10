@@ -278,7 +278,7 @@ def get_all_embeddings(
         model_embedding_path = os.path.join(embedding_folder_path, emb_name)
                 
         if not os.path.exists(model_embedding_path):
-            model_load_path = os.path.join(output_folder, naming.model_folder, model_name)                
+            model_load_path = os.path.join(output_folder, naming.get_model_folder(), model_name)                
             
             features = data_dict[subset].features
             embeddings = sent_bert.get_and_save_sentence_bert_embeddings(
