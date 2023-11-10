@@ -1,0 +1,21 @@
+name: s_bert_hub
+channels:
+  - conda-forge
+  - defaults
+dependencies:    
+  - docopt
+  - h5py
+  - matplotlib
+  - nltk
+  - nmslib
+  - pandas
+  - pip
+  - pytest
+  - python=3.9
+  - scikit-learn
+  - scipy
+  - sentence-transformers
+  - statsmodels
+  - tqdm
+  - umap-learn
+
