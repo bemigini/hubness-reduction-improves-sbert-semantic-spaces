@@ -1,6 +1,8 @@
 # hubness-reduction-improves-sbert-semantic-spaces
 Code for the article: "Hubness Reduction Improves Sentence-BERT Semantic Spaces" by Betrix M. G. Nielsen and Lars Kai Hansen. Article accepted for publication at NLDL 2024.
+
 Arxiv link: COMING
+
 Trained models, embeddings and result files can be found at: https://doi.org/10.11583/DTU.c.6165561.v1.
 
 ## Description
