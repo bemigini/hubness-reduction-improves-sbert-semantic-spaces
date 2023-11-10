@@ -1,0 +1,15 @@
+Yahoo Answers 10 categories for NLP CSV
+
+
+Taken from:
+https://www.kaggle.com/datasets/yacharki/yahoo-answers-10-categories-for-nlp-csv
+
+
+Made by: 
+Xiang Zhang (xiang.zhang@nyu.edu) for the following paper: 
+Xiang Zhang, Junbo Zhao, Yann LeCun. Character-level Convolutional Networks for Text Classification. Advances in Neural Information Processing Systems 28 (NIPS 2015).
+
+License:
+Open Data Commons Public Domain Dedication and License (PDDL) v1.0
+
+

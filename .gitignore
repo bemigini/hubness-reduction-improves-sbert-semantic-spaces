@@ -127,13 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-/datasets/MSRParaphraseCorpus/~$r_paraphrase_README.rtf
-/barba_2021/*.ckpt
-/sentence_distance/barba_2021/*.ckpt
-/sentence_distance/performance/results/sts_sentence_bert_embeddings_all-mpnet-base-v2.json
+
+# Custom
 output
-/datasets
-newsg_train_sentence_bert_embeddings_all-mpnet-base-v2.csv
-newsg_test_sentence_bert_embeddings_all-mpnet-base-v2.csv
-newsg_train_sentence_bert_embeddings_output-training_stsbenchmark_microsoft-mpnet-base-2022-06-29_16-16-19.csv
-newsg_test_sentence_bert_embeddings_output-training_stsbenchmark_microsoft-mpnet-base-2022-06-29_16-16-19.csv
+datasets/Yahoo_answers_10_categories/test.csv.gz
+datasets/Yahoo_answers_10_categories/train.csv.gz

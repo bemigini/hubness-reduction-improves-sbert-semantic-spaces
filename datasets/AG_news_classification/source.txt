@@ -1,0 +1,18 @@
+AG News Classification Dataset
+
+
+Taken from:
+https://www.kaggle.com/datasets/amananandrai/ag-news-classification-dataset
+
+
+Made by:
+Antonio Gulli, http://groups.di.unipi.it/~gulli/AG_corpus_of_news_articles.html 
+
+
+License:
+Unknown 
+
+
+
+
+

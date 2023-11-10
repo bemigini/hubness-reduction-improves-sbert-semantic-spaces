@@ -1,0 +1,4 @@
+Class Index: Consists of class ids 1-4 where 1-World, 2-Sports, 3-Business, 4-Sci/Tech 
+Title: Contains title of the news articles
+Description: Contains description of the news articles
+
