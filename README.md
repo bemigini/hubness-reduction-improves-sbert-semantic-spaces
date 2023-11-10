@@ -1,9 +1,10 @@
 # hubness-reduction-improves-sbert-semantic-spaces
-
+Code for the article: "Hubness Reduction Improves Sentence-BERT Semantic Spaces" by Betrix M. G. Nielsen and Lars Kai Hansen. Article accepted for publication at NLDL 2024.
 Arxiv link: COMING
 
 ## Description
-TODO: Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+We explore the high-dimensional problem of hubness in sentence-BERT embeddings. Hubness results in asymmetric neighborhood relations, such that some texts (the hubs) are neighbours of many other texts while most texts (so-called anti-hubs), are neighbours of few or no other texts.
+This code includes implementation of training, embedding generation and performance evaluation of sentence-BERT models with and without hubness reduction. Evaluation is with respect to hubness measures and K-Nearest Neighbours classification. 
 
 ## Installation guide
 The outline of the installation is the following:
