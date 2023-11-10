@@ -132,3 +132,5 @@ dmypy.json
 output
 datasets/Yahoo_answers_10_categories/test.csv.gz
 datasets/Yahoo_answers_10_categories/train.csv.gz
+datasets/Yahoo_answers_10_categories/yahoo_answers_small_test_indexes.csv
+datasets/Yahoo_answers_10_categories/yahoo_answers_small_train_indexes.csv
