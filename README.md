@@ -20,6 +20,20 @@ If you are installing on a linux machine with GPU, use the linux_gpu.yml file pr
 conda create -f linux_gpu.yml
 conda activate s_bert_hub
 ```
+If you are on a windows machine, use the commands: 
+```
+conda create -f windows.yml
+conda activate s_bert_hub
+```
+and either
+```
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+```
+for gpu, or 
+```
+conda install pytorch torchvision torchaudio cpuonly -c pytorch
+```
+for cpu. 
 
 **2. Install scikit hubness package** 
 
