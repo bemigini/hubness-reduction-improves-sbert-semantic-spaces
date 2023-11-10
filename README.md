@@ -52,17 +52,17 @@ To get embeddings from a single trained model, use:
 ```
 python run.py embeddings --output-folder=<file> --model-name=<string> --dataset=<string> --embeddings-save-to=<file> [options]
 ```
-For example, to get embeddings for the 20 Newsgroup dataset with your model "sts_bert_microsoft-mpnet-base_cos_ORTHOGONAL_z_False_n_False_c_False_seed0" from the folder "output/models" and save the embeddings in "emb_test.h5" use
+For example, to get embeddings for the train split of the 20 Newsgroup dataset with your model "sts_bert_microsoft-mpnet-base_cos_ORTHOGONAL_z_False_n_False_c_False_seed0" from the folder "output/models" and save the embeddings in "emb_test.h5" use
 ```
-python run.py embeddings --output-folder=output --model-name=sts_bert_microsoft-mpnet-base_cos_ORTHOGONAL_z_False_n_False_c_False_seed0 --dataset=newsgroups.all --embeddings-save-to=emb_test.h5 --cuda
+python run.py embeddings --output-folder=output --model-name=sts_bert_microsoft-mpnet-base_cos_ORTHOGONAL_z_False_n_False_c_False_seed0 --dataset=newsgroups.train --embeddings-save-to=emb_test.h5 --cuda
 ```
 To get embeddings from all models in a folder, use:
 ```
 python run.py embeddings --output-folder=<file> --model-name=<string> --dataset=<string> --model-names-path=<file> [options]
 ```
-For example, to get embeddings for the 20 Newsgroup dataset with all models with the prefix "sts_bert" from the folder "output/models" and save the embeddings in "output/embeddings" use
+For example, to get embeddings for the train split of the 20 Newsgroup dataset with all models with the prefix "sts_bert" from the folder "output/models" and save the embeddings in "output/embeddings" use
 ```
-python run.py embeddings --output-folder=output --model-name=sts_bert --dataset=newsgroups.all --model-names-path=models --cuda
+python run.py embeddings --output-folder=output --model-name=sts_bert --dataset=newsgroups.train --model-names-path=models --cuda
 ```
 To get the performance of the embeddings use:
 ```
@@ -77,12 +77,10 @@ To get the hubness performance of the embeddings from the "output/embeddings" fo
 python run.py performance --output-folder=output --dataset=newsgroups.test --model-names-path=embeddings --force-dist=none,normal_all --result-type=hubness
 ```
 
-
-
-TODO: Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
 ## Authors and acknowledgment
-TODO: Show your appreciation to those who have contributed to the project.
+Authors of article: Beatrix M. G. Nielsen and Lars Kai Hansen
+
+This work was supported by the Danish Pioneer Centre for AI, DNRF grant number P1. 
 
 ## License
 Apache License 2.0. See LICENSE.
