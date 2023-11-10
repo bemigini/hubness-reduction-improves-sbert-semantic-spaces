@@ -5,6 +5,7 @@ Arxiv link: COMING
 ## Description
 We explore the high-dimensional problem of hubness in sentence-BERT embeddings. Hubness results in asymmetric neighborhood relations, such that some texts (the hubs) are neighbours of many other texts while most texts (so-called anti-hubs), are neighbours of few or no other texts.
 This code includes implementation of training, embedding generation and performance evaluation of sentence-BERT models with and without hubness reduction. Evaluation is with respect to hubness measures and K-Nearest Neighbours classification. 
+Code for generating the figures in the article is in src/make_figures/article.py. 
 
 ## Installation guide
 The outline of the installation is the following:
